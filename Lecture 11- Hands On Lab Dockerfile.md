@@ -111,7 +111,7 @@ redis
 ```
 
 ```
--- Dockerfile
+#Dockerfile
 FROM python:3.7-alpine
 WORKDIR /code
 ENV FLASK_APP=app.py
@@ -122,10 +122,7 @@ RUN pip install -r requirements.txt
 EXPOSE 5000
 COPY . .
 CMD ["flask", "run"]
-
----
 ```
-![image](https://github.com/UrduITAcademy-official/Containerization-Orchestration-Series/assets/56934817/690afdf5-0461-4bb2-b781-d4441ddb34f7)
-
+ 
  
 
